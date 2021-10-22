@@ -1,3 +1,4 @@
+
     //iconSide onclick
     document.querySelectorAll('.iconColor')[0].onclick = () =>{
       document.querySelectorAll('.side')[0].classList.toggle('open');
@@ -43,9 +44,8 @@ AllDivWithoutSide.forEach(i => {
 
 
 
+
 //Events of tags bar Scroll
-
-
 
 //Start menue icon
 menuetow.style.opacity = '1';
@@ -67,7 +67,6 @@ menue.onclick = () => {
 
         menuethree.style.transform = ' rotate(45deg)';
         menuethree.style.backgroundColor = mainColor;
-
         menuetow.style.opacity = '0';
     }
 
@@ -361,6 +360,8 @@ scrolling.onclick = () => {
 
 
 
+          var header = document.querySelectorAll('header')[0];
+          console.log(header)
 
 
 

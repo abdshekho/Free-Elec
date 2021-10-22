@@ -211,7 +211,7 @@ background-color: transparent;
 margin:  auto;
 position: absolute;
 left: 0;
-z-index: 12;
+z-index: 200;
 background-color: var(--headcolor);
 position: static;
 user-select: none;
@@ -1147,7 +1147,7 @@ margin-bottom: 40px;
     background: #414246;
     color: white;
     padding: 10px;
-    width: 233px;
+    width: 100px;
     transform: translate(-50%, -50%);
     text-align: center;
     border-radius: 25px;
@@ -1156,6 +1156,12 @@ margin-bottom: 40px;
     opacity: 0;
 
 }
+@media (max-width: 767px) {
+    #iscopy{
+        bottom: 25%;
+    }
+
+    }
 /* End Contact */
 
 
@@ -1263,6 +1269,10 @@ animation-duration: 1s;
 .view .details .text .name span{
     color: var(--maincolor);
     font-weight: bold;
+    background-color: #b6b9bf;
+    padding: 2px 7px;
+    border-radius: 4px;
+    
 }
 
 .view .details .barimg{
@@ -1608,6 +1618,7 @@ direction: ltr;
 }
 .open{
 left: 0;
+z-index: 2000;
 /* border-right: 2px solid var(--maincolor); */
 }
 
