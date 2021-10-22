@@ -357,24 +357,4 @@ scrolling.onclick = () => {
 };
           //End Scroll
 
-
-
-
-          var header = document.querySelectorAll('header')[0];
-          console.log(header)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          
