@@ -1579,6 +1579,64 @@ footer .whatsapp::after{
     transform: rotate(45deg) scale(0);
     /* display: none; */
 }
+/* location */
+footer .location::before{
+    content: 'Artoz  Syria  33.425672, 36.150236';
+    background-color: #a6a6a8;
+    position: absolute;
+    top: -62px;
+    left: -24px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    width: 360px;
+    color: #414246;
+    transform: scale(0);
+    transition: 0.5s;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+footer .location::after{
+    content: ' ';
+    background-color: #a6a6a8;
+    position: absolute;
+    top: -28px;
+    left: 25px;
+    width: 10px;
+    height: 10px;
+    transition: 0.5s;
+    transform: rotate(45deg) scale(0);
+    /* display: none; */
+}
+/* facebook */
+footer .facebook::before{
+    content: 'facebook.com/elecfree/';
+    background-color: #a6a6a8;
+    position: absolute;
+    top: -62px;
+    left: -24px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    width: 300px;
+    color: #414246;
+    transform: scale(0);
+    transition: 0.5s;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+footer .facebook::after{
+    content: ' ';
+    background-color: #a6a6a8;
+    position: absolute;
+    top: -28px;
+    left: 25px;
+    width: 10px;
+    height: 10px;
+    transition: 0.5s;
+    transform: rotate(45deg) scale(0);
+    /* display: none; */
+}
 /*Start phone */
 footer .phone::before{
     content: '+963 988 3666 77';
@@ -1608,23 +1666,42 @@ footer .phone::after{
     transform: rotate(45deg) scale(0);
     /* display: none; */
 }
-/*End phone */
-
-footer .whatsapp:hover::before{
+/* mail */
+footer .mail::before{
+    content: 'info@free-elec.com';
+    background-color: #a6a6a8;
+    position: absolute;
+    top: -62px;
+    left: -24px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    width: 200px;
+    color: #414246;
+    transform: scale(0);
+    transition: 0.5s;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+footer .mail::after{
+    content: ' ';
+    background-color: #a6a6a8;
+    position: absolute;
+    top: -28px;
+    left: 25px;
+    width: 10px;
+    height: 10px;
+    transition: 0.5s;
+    transform: rotate(45deg) scale(0);
+    /* display: none; */
+}
+footer a:hover::before{
     transform: scale(1);
 }
-footer .whatsapp:hover::after{
+footer a:hover::after{
     transform: rotate(45deg) scale(1);
 
 }
-footer .phone:hover::before{
-    transform: scale(1);
-}
-footer .phone:hover::after{
-    transform: rotate(45deg) scale(1);
-
-}
-
 /* End footer */
 
 
