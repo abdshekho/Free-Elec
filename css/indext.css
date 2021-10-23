@@ -1526,10 +1526,12 @@ footer .social .whatsapp:hover i{
 color: #56d296;
 
 }
-footer .social .location:hover i{
+footer .social .phone:hover i{
 color:#3ad130a6 ;
 }
-
+footer .social .location:hover i{
+    color:#3ad130a6 ;
+    }
 
 footer .copyright{
 color: white;
@@ -1545,7 +1547,7 @@ color: var(--maincolor);
 font-weight: 800;
 
 }
-footer .whatsapp{
+footer a{
     position: relative;
     transition: 0.5s;
 }
@@ -1577,11 +1579,48 @@ footer .whatsapp::after{
     transform: rotate(45deg) scale(0);
     /* display: none; */
 }
+/*Start phone */
+footer .phone::before{
+    content: '+963 988 3666 77';
+    background-color: #a6a6a8;
+    position: absolute;
+    top: -62px;
+    left: -24px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    width: 202px;
+    color: #414246;
+    transform: scale(0);
+    transition: 0.5s;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+footer .phone::after{
+    content: ' ';
+    background-color: #a6a6a8;
+    position: absolute;
+    top: -28px;
+    left: 25px;
+    width: 10px;
+    height: 10px;
+    transition: 0.5s;
+    transform: rotate(45deg) scale(0);
+    /* display: none; */
+}
+/*End phone */
 
 footer .whatsapp:hover::before{
     transform: scale(1);
 }
 footer .whatsapp:hover::after{
+    transform: rotate(45deg) scale(1);
+
+}
+footer .phone:hover::before{
+    transform: scale(1);
+}
+footer .phone:hover::after{
     transform: rotate(45deg) scale(1);
 
 }
