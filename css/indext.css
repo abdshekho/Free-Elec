@@ -254,13 +254,6 @@ header h2{
 header h2 span{
     color: white;
 }
-
-header .logo:hover h2{
-    /* color: white; */
-}
-header .logo:hover h2 span{
-    /* color: black; */
-}
 header .container{
 width: 85%;
 min-height: 100%;
@@ -294,6 +287,9 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 
+}
+header .container nav .toggle-menu+ ul li::first-letter{
+    text-transform: capitalize;
 }
 header .container nav .toggle-menu:hover.toggle-menu div{
 background-color: var(--maincolor);
@@ -371,7 +367,6 @@ cursor: pointer;
 header .container nav .toggle-menu+ ul li{
 padding: 15px;
 width: 100%;
-
 }
 header .container nav .toggle-menu+ ul li a{
 display: block;
@@ -1527,11 +1522,11 @@ footer .social .fa-home:hover{
 color: #1f1a1a87;
 }
 footer .social .fa-phone-square:hover,
-footer .social .fa-whatsapp:hover{
+footer .social .whatsapp:hover i{
 color: #56d296;
 
 }
-footer .social .fa-map-marker-alt:hover{
+footer .social .location:hover i{
 color:#3ad130a6 ;
 }
 
@@ -1555,16 +1550,19 @@ footer .whatsapp{
     transition: 0.5s;
 }
 footer .whatsapp::before{
-    content: '+963993453898';
+    content: '+963 993 4538 98';
     background-color: #a6a6a8;
     position: absolute;
-    top: -50px;
+    top: -63px;
     left: -24px;
-    padding: 5px 12px;
+    padding: 8px 12px;
     border-radius: 4px;
+    width: 202px;
     color: #414246;
     transform: scale(0);
     transition: 0.5s;
+    font-weight: 600;
+    font-size: 20px;
     
 }
 footer .whatsapp::after{
