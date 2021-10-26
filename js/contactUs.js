@@ -243,7 +243,7 @@ ways.forEach(m=>{
 
         setTimeout(()=>{
           note.style.opacity = 0;
-        },1000)
+        },800)
 
   })
 })

@@ -91,7 +91,8 @@ max-width: 557px;
 margin: 0px auto 100px auto;
 color: var(--headcolor);
 line-height: 2;
-font-family: cursive;
+font-weight: 600;
+/* font-family: cursive; */
 padding: 0 5x;
 background: #73757b1f;
 padding: 15px;
