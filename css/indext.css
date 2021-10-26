@@ -676,7 +676,7 @@ font-weight: 600;
     background-color: var(--maincolor);
     color: white;
 }
-@media (max-width:800px) {
+@media (max-width:1000px) {
     .products .container .shuffle{
         display: block;
         
@@ -703,7 +703,6 @@ font-weight: 600;
 
 .products .container .inverter-tab,
 .products .container .accessories-tab{
-   
     animation-name: LandingText;
     animation-duration: 0.7s;
 }
@@ -761,7 +760,7 @@ box-shadow: 4px 4px 5px #afafb1;
     transform: rotate(-25deg) translateX(-51px);
     padding: 42px 0;
     text-align: center;
-    font-size: 26px;font-family: cursive;
+    font-size: 26px;
     
 }
 
@@ -775,28 +774,33 @@ box-shadow: 4px 4px 5px #afafb1;
     transform: rotate(-25deg) translateX(-51px);
     padding: 20px 0;
     text-align: center;
-    font-size: 26px;font-family: cursive;
-
-}
-@media (max-width:799) {
-    .products .imgs-container{
-display: block;
+    font-size: 26px;
 }
 
 
-}
-@media (min-width:800px) {
-    .products .imgs-container .box{
-flex-basis: 47%;}
 
-}
 
-@media (min-width:1399px) {
-.products .imgs-container .box{
-    flex-basis: 26%;
 
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .products .imgs-container .box img{
     max-width: 100%;
     transition: 0.3s;
@@ -819,6 +823,7 @@ height: 50%;padding: 1px;
 .products .imgs-container .box .caption h4{
         color: #157bacd9;
     text-align: center;
+    padding: 0 5px;
     font-size: 21px;
 }
 
@@ -900,6 +905,77 @@ background-color: var(--bodycolor);
 font-weight: bold;
 /* font-size: 20px; */
 }
+
+
+
+
+
+
+
+@media (min-width:800px) {
+    .products .imgs-container .box{
+flex-basis: 31%;}
+.products .imgs-container{
+    width: 89%;
+    }
+
+}
+@media (min-width:1600px) {
+.products .imgs-container .box{
+    flex-basis: 25%;
+}
+.products .imgs-container{
+    width: 82%;
+    }
+}
+
+@media (max-width:1000px) {
+    .products .imgs-container .box{
+        flex-basis: 44%;
+    }
+    .products .imgs-container{
+        width: 95%;
+    }
+}
+@media (max-width:799px) {
+    .products .imgs-container{
+        width: 99%;
+    }
+    .products .imgs-container .box{
+        flex-basis: 44%;
+    }
+}
+
+@media (max-width:599px) {
+    .products .imgs-container{
+        width: 99%;
+    }
+    .products .imgs-container .box{
+        flex-basis: 80%;
+    }
+    /* .products .imgs-container .box .caption h4 {
+        font-size: 17px;
+    }
+    .products .imgs-container .box .caption p{
+        font-size: 14px;
+    } */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:800px) {
 .products .trans span:last-child,
 .products .trans span:first-child
@@ -1300,6 +1376,7 @@ margin: 7px;transition: 0.2s;
     }
     .view .details .text .twice{
         align-items: center;
+        border-radius: 4px;
         
         
     }
