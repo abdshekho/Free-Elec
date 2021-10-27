@@ -63,6 +63,9 @@ background-color: var(--maincolor);
 padding: 13px;
 margin-top: 0;
 letter-spacing: 3px;
+margin: 0;
+position: relative;
+z-index: 10;
 }
 .main-heading h2::before{
 /* content: ""; */
@@ -87,26 +90,93 @@ border: 2px dotted #333;
 
 }
 .main-heading p {
-max-width: 557px;
-margin: 0px auto 100px auto;
-color: var(--headcolor);
-line-height: 2;
-font-weight: 600;
-/* font-family: cursive; */
-padding: 0 5x;
-background: #73757b1f;
-padding: 15px;
-border: 4px double var(--headcolor);
-border-right-color: var(--maincolor);
-border-bottom-color: var(--maincolor);
-
-animation-name: LandingHeader;
-
-animation-duration: 0.5s;
-box-shadow: 4px 4px 5px #afafb1;
+    max-width: 557px;
+    margin: 0px auto 100px auto;
+    color: #414246e6;
+    line-height: 2;
+    font-weight: 600;
+    padding: 0 5x;
+    background: #cacfd6;
+    padding: 15px;
+    border: 10px solid var(--maincolor);
+    border-bottom: none;
+    animation-name: LandingHeader;
+    animation-duration: 0.5s;
+    box-shadow: 0px 16px 20px 3px #afafb1;
+    /* box-shadow: inset -1px -1px 10px 3px #afafb1; */
+    border-image-slice: 1;
+    /* border-image-source: linear-gradient(to top ,var(--maincolor),var(--maincolor),#414246, var(--maincolor) ); */
+    border-image-source: linear-gradient(to right, #414246,var(--maincolor),var(--maincolor),var(--maincolor), #414246, #414246,var(--maincolor),var(--maincolor),var(--maincolor),#414246);
 }
 
 
+
+.main-heading .barA{
+    height: 40px;
+    width: 20px;
+    background-color: var(--maincolor);
+    position: relative;
+    left: -130px;
+    margin: 0;
+    display: inline-block;
+    transform: scaleY(1.3);
+
+
+}
+.main-heading .barB{
+    height: 40px;
+    width: 20px;
+    background-color: var(--maincolor);
+    position: relative;
+    left: 130px;
+    display: inline-block;
+    transform: scaleY(1.3);
+
+}
+.main-heading .barA::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 19px;
+    border: 10px solid #157bac;
+    /* border-top: none; */
+    border-top-color: transparent;
+    border-right-color: transparent;
+    
+}
+.main-heading .barA::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -19px;
+    border: 10px solid #157bac;
+    /* border-top: none; */
+    border-top-color: transparent;
+    border-left-color: transparent;
+    
+}
+.main-heading .barB::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 19px;
+    border: 10px solid #157bac;
+    /* border-top: none; */
+    border-top-color: transparent;
+    border-right-color: transparent;
+    
+}
+.main-heading .barB::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -19px;
+    border: 10px solid #157bac;
+    /* border-top: none; */
+    border-top-color: transparent;
+    border-left-color: transparent;
+    
+}
 
 
 /* End global rules */
