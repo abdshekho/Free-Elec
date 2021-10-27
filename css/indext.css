@@ -108,6 +108,14 @@ border: 2px dotted #333;
     /* border-image-source: linear-gradient(to top ,var(--maincolor),var(--maincolor),#414246, var(--maincolor) ); */
     border-image-source: linear-gradient(to right, #414246,var(--maincolor),var(--maincolor),var(--maincolor), #414246, #414246,var(--maincolor),var(--maincolor),var(--maincolor),#414246);
 }
+@media (max-width:600px) {
+.main-heading p {
+    border-right: none;border-left: none;
+    border-image-source: linear-gradient(to right,var(--maincolor),var(--maincolor),var(--maincolor), #414246, #414246,var(--maincolor),var(--maincolor),var(--maincolor));
+
+}
+    
+}
 
 
 
