@@ -161,7 +161,6 @@ border: 2px dotted #333;
     /* border-top: none; */
     border-top-color: transparent;
     border-left-color: transparent;
-    
 }
 .main-heading .barB::after{
     content: '';
@@ -172,7 +171,6 @@ border: 2px dotted #333;
     /* border-top: none; */
     border-top-color: transparent;
     border-right-color: transparent;
-    
 }
 .main-heading .barB::before{
     content: '';
@@ -183,7 +181,6 @@ border: 2px dotted #333;
     /* border-top: none; */
     border-top-color: transparent;
     border-left-color: transparent;
-    
 }
 
 
