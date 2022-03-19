@@ -114,6 +114,12 @@ iconColor.onclick = () => {
 
 }
 
+var logoColor = [];
+logoColor.push(document.querySelectorAll('header img')[0])
+logoColor.push(document.querySelectorAll('footer img')[0])
+
+
+chooseColor();
 //colors
 const colorList = document.querySelectorAll(".colors-list li");
 document.documentElement.style.setProperty('--maincolor', localStorage.getItem('color-option'));
@@ -124,6 +130,8 @@ colorList.forEach(li => {
         li.className = "active";
     }
     li.addEventListener("click", (e) => {
+
+
         localStorage.setItem('li', e.target.dataset.count);
 
         for (var i = 0; i < colorList.length; i++) {
@@ -137,8 +145,40 @@ colorList.forEach(li => {
         //set value of localStorage
         localStorage.setItem('color-option', e.target.dataset.color);
 
+        chooseColor();
+
     });
 });
+
+
+
+function chooseColor() {
+    logoColor.forEach(li => {
+        if (mainColor == '#157bac') {
+            li.style.filter = 'invert(31%) sepia(74%) saturate(1549%) hue-rotate(173deg) brightness(94%) contrast(84%)'
+
+        }
+        if (mainColor == '#c15151') {
+            li.style.filter = 'invert(42%) sepia(39%) saturate(1086%) hue-rotate(316deg) brightness(89%) contrast(76%)'
+
+        }
+        if (mainColor == '#0a6575') {
+            li.style.filter = 'invert(34%) sepia(17%) saturate(2041%) hue-rotate(141deg) brightness(91%) contrast(96%)'
+
+        }
+        if (mainColor == '#5eb98d') {
+            li.style.filter = ' invert(73%) sepia(11%) saturate(1491%) hue-rotate(99deg) brightness(89%) contrast(84%)'
+
+        }
+        if (mainColor == '#648') {
+            li.style.filter = 'invert(31%) sepia(12%) saturate(2482%) hue-rotate(227deg) brightness(94%) contrast(91%)'
+
+        }
+
+    })
+
+}
+
 
 
 
