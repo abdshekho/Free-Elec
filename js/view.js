@@ -12,11 +12,6 @@ let   //menue icon
     menuethree = document.querySelectorAll('.toggle-menu .three')[0];
     // end menue icon
 
-    //tags header
-    // servicest = document.getElementsByClassName("servicest")[0],
-    // products = document.getElementsByClassName("products")[0],
-    // contactt = document.getElementsByClassName("contactt")[0];
-
     document.querySelectorAll('.iconColor')[0].onclick = () => {
         document.querySelectorAll('.side')[0].classList.toggle('open');
         document.querySelectorAll('.iconColor i')[0].classList.toggle('fa-spin');
@@ -31,7 +26,6 @@ var sideBar = document.querySelectorAll('.side')[0];
 
 AllDivWithoutSide.forEach(i => {
     i.onclick = () => {
-      
         if (sideBar.className == 'side open') {
             document.querySelectorAll('.side')[0].classList.toggle('open');
             document.querySelectorAll('.iconColor i')[0].classList.toggle('fa-spin');
@@ -230,32 +224,30 @@ function imageZoom(imgID, resultID) {
     function moveLens(e) {
         var pos, x, y;
         e.preventDefault();
-        /*get the cursor's x and y positions:*/
+
         pos = getCursorPos(e);
-        /*calculate the position of the lens:*/
+
         x = pos.x - (lens.offsetWidth / 2);
         y = pos.y - (lens.offsetHeight / 2);
-        /*prevent the lens from being positioned outside the image:*/
+
         if (x > img.width - lens.offsetWidth) { x = img.width - lens.offsetWidth; }
         if (x < 0) { x = 0; }
         if (y > img.height - lens.offsetHeight) { y = img.height - lens.offsetHeight; }
         if (y < 0) { y = 0; }
-        /*set the position of the lens:*/
         lens.style.left = x + "px";
         lens.style.top = y + "px";
-        /*display what the lens "sees":*/
+        
         result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
     }
     function getCursorPos(e) {
         var a, x = 0, y = 0;
-        // var le = document.querySelectorAll('.img-zoom-lens')[0];
         e = e || window.event;
-        /*get the x and y positions of the image:*/
+
         a = img.getBoundingClientRect();
-        /*calculate the cursor's x and y coordinates, relative to the image:*/
+
         x = e.pageX - a.left;
         y = e.pageY - a.top;
-        /*consider any page scrolling:*/
+        
         x = x - window.pageXOffset;
         y = y - window.pageYOffset;
         return { x: x, y: y };

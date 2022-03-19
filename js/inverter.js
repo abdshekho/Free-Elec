@@ -31,7 +31,6 @@ var sideBar = document.querySelectorAll('.side')[0];
 
 AllDivWithoutSide.forEach(i => {
     i.onclick = () => {
-      
         if (sideBar.className == 'side open') {
             document.querySelectorAll('.side')[0].classList.toggle('open');
             document.querySelectorAll('.iconColor i')[0].classList.toggle('fa-spin');

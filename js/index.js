@@ -124,42 +124,6 @@ var backgroundInterval = setInterval(
 
 
 
-// start fun Effect Text
-// var EffectText = overText.textContent;
-// overText.textContent = ``;
-// var i = 0;
-// var countEffectText = setInterval(() => {
-//   overText.innerHTML = overText.innerHTML + EffectText.charAt(i);
-//   i++;
-//   if (i > EffectText.length){
-//     clearInterval(countEffectText);
-//     if(localStorage.length == 1){
-//     var PNote = document.createElement('p');
-//     PNote.textContent = 'Note: If you don\'t like the design, you can change it from the top of the screen on the left, click on the icon';
-//     PNote.style.backgroundColor = '#84db6824';
-//     overText.appendChild(PNote);
-
-//     var generationIcon = document.createElement('i');
-//     generationIcon.classList= "fas fa-cog fa-spin";
-//     generationIcon.style.marginLeft = '20px'
-//     PNote.appendChild(generationIcon);
-
-
-//     var body = document.querySelectorAll('body')[0];
-// var arrow = document.createElement('i');
-// arrow.className = "fas fa-level-up-alt";
-//     body.appendChild(arrow);
-//     }
-//   } 
-// }, 30);
-
-//End fun Effect Text
-//End landing
-
-
-
-
-//side list menu
 
 
 
@@ -176,7 +140,7 @@ var backgroundInterval = setInterval(
 
 
 
-// document.querySelectorAll('body').onclick = () =>{
+
 var logoColor = [];
 logoColor.push(document.querySelectorAll('header img')[0])
 logoColor.push(document.querySelectorAll('footer img')[0])
@@ -185,7 +149,6 @@ logoColor.push(document.querySelectorAll('.landing h2 img')[0])
 chooseColor();
 
 
-// }
 //colors
 const colorList = document.querySelectorAll(".colors-list li");
 document.documentElement.style.setProperty('--maincolor', localStorage.getItem('color-option'));
@@ -193,7 +156,7 @@ colorList.forEach(li => {
   li.className = "";
   // set localStorage of active
   if (li.dataset.count == localStorage.li) {
-    li.className = "active";
+    li.className = "active"; 
   }
   li.addEventListener("click", (e) => {
     
